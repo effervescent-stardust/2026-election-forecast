@@ -1,0 +1,89 @@
+{
+  "forecast_asof_utc": "2026-11-02T18:52:08.126598+00:00",
+  "publication_package_created_utc": "2026-11-02T23:50:05.838441+00:00",
+  "status": "stopped_interim_research_checkpoint",
+  "scope": {
+    "senate_contests": 16,
+    "house_districts": 97
+  },
+  "probability_definition": "Chance of winning; not vote share. Senate statewide; House district-level.",
+  "timestamp_note": "The model cutoff and package creation times are self-reported metadata. Independent existence evidence is supplied separately by the OpenTimestamps proof of the immutable ZIP.",
+  "public_export_note": "Original forecast CSV bytes preserved. Report local links removed or mapped to included downloads. Raw third-party documents and internal working-audit attachments are not bundled.",
+  "files": {
+    ".nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "README.txt": {
+      "sha256": "a9e1fab89396b4770982106e9a425f9cc4553b8b800d204ba3caec5b8946aa58",
+      "bytes": 1913
+    },
+    "chamber_distributions.png": {
+      "sha256": "174e0339a12d782d000ac3731a28dd286dea76ebdebe3c87a7da1e09a53ac069",
+      "bytes": 66576
+    },
+    "data/chart-data.json": {
+      "sha256": "57c5cf89ac453630e6f59d2e0545258538d6481f0b37bb39d29dfbc5328f8a2a",
+      "bytes": 27971
+    },
+    "data/house-chamber-scenarios.csv": {
+      "sha256": "2a8c47b798c120d16e00fbf303ba1a46c418e3624c4f182203ee55e210753a8a",
+      "bytes": 2070
+    },
+    "data/house-forecast.csv": {
+      "sha256": "050a95d3adfad1775e9b01127ec5b17d371714914ab87dd4bd37fcfe079db0b0",
+      "bytes": 44685
+    },
+    "data/house-seat-distributions.csv": {
+      "sha256": "4bd774d6347627f2f495bf2cd6df4d0d4fafab908a87fc88c2c342aac6d182dd",
+      "bytes": 110339
+    },
+    "data/senate-chamber-scenarios.csv": {
+      "sha256": "e7269dd0c7331761c79de069e81b6bbdfd6f2fae594641cc19b326d94b18cb39",
+      "bytes": 909
+    },
+    "data/senate-component-sensitivity.csv": {
+      "sha256": "affc548514c3ee4da397d1951b3d70c0ea2b7b81e91c01ebbf1d4d5db0842424",
+      "bytes": 797
+    },
+    "data/senate-forecast.csv": {
+      "sha256": "1b695df6d1c1511c0b3968a4a02c17899aaf3066bba5f50730b50479ffedccac",
+      "bytes": 4316
+    },
+    "data/senate-model-details.csv": {
+      "sha256": "6fc3f69e943189b490a5a80ebfaa03e2816feb2d200f6be103281c1fd91a057c",
+      "bytes": 9080
+    },
+    "data/senate-model-sensitivity.csv": {
+      "sha256": "7262aa0502c2b0b48c854edc1ef1fef7c9a8018bb9f1568a3a4c55efa2a1e37a",
+      "bytes": 3430
+    },
+    "data/senate-seat-distributions.csv": {
+      "sha256": "56aec3828fe1126df1c02976f54e3a1b896fd362b1e6e0a0bc5c7682e2fecdad",
+      "bytes": 12023
+    },
+    "index.html": {
+      "sha256": "0138bed94df4b9d18347c72d868aaf9cb46c2af9ce0a0a0423eb8847a4fa5c99",
+      "bytes": 152030
+    },
+    "methods.html": {
+      "sha256": "4355078692eb1bba05ec65d56625a622abc770b83389f788a3ba6c6da59e55e8",
+      "bytes": 84402
+    },
+    "senate_probabilities.png": {
+      "sha256": "b867a235c60208c7b93ce95071e48c2834ac0ea56fb0029d60a87a303a720fbb",
+      "bytes": 160514
+    }
+  },
+  "original_forecast_hashes": {
+    "data/senate-forecast.csv": "1b695df6d1c1511c0b3968a4a02c17899aaf3066bba5f50730b50479ffedccac",
+    "data/house-forecast.csv": "050a95d3adfad1775e9b01127ec5b17d371714914ab87dd4bd37fcfe079db0b0",
+    "data/senate-model-details.csv": "6fc3f69e943189b490a5a80ebfaa03e2816feb2d200f6be103281c1fd91a057c",
+    "data/senate-chamber-scenarios.csv": "e7269dd0c7331761c79de069e81b6bbdfd6f2fae594641cc19b326d94b18cb39",
+    "data/senate-seat-distributions.csv": "56aec3828fe1126df1c02976f54e3a1b896fd362b1e6e0a0bc5c7682e2fecdad",
+    "data/senate-component-sensitivity.csv": "affc548514c3ee4da397d1951b3d70c0ea2b7b81e91c01ebbf1d4d5db0842424",
+    "data/senate-model-sensitivity.csv": "7262aa0502c2b0b48c854edc1ef1fef7c9a8018bb9f1568a3a4c55efa2a1e37a",
+    "data/house-chamber-scenarios.csv": "2a8c47b798c120d16e00fbf303ba1a46c418e3624c4f182203ee55e210753a8a",
+    "data/house-seat-distributions.csv": "4bd774d6347627f2f495bf2cd6df4d0d4fafab908a87fc88c2c342aac6d182dd"
+  }
+}

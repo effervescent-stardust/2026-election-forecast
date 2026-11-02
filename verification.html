@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verify the forecast timestamp</title>
+<style>:root{color-scheme:light dark}body{font-family:system-ui,-apple-system,sans-serif;background:light-dark(#fafbfd,#17191d);color:light-dark(#182532,#eef3f9);line-height:1.6;margin:0}main{max-width:850px;margin:auto;padding:32px 22px}h1{font-size:clamp(28px,5vw,42px);line-height:1.2;letter-spacing:-.7px}h2{font-size:22px;margin-top:32px}a{color:light-dark(#1656a7,#9ac8ff);text-underline-offset:4px}nav{display:flex;gap:12px 24px;flex-wrap:wrap}.status{padding:18px 22px;background:light-dark(#eaf0fa,#252e3b);border-radius:12px}.hash{overflow-wrap:anywhere;font-family:ui-monospace,monospace;font-size:14px;padding:14px;background:light-dark(#edf0f4,#272b32)}li{margin:10px 0}.muted{opacity:.75}dt{font-weight:600}dd{margin:0 0 14px}footer{margin-top:40px;font-size:14px}</style></head>
+<body><main>
+<nav><a href="index.html">← Interactive forecast</a><a href="methods.html">Methods &amp; sources</a></nav>
+<h1>A timestamp you can check</h1>
+<div class="status"><strong>Timestamp submitted — confirmation pending</strong><p>OpenTimestamps has accepted the fingerprint of the frozen forecast. Its receipt is available below. Bitcoin confirmation is still pending, so this page does not yet claim a confirmed timestamp.</p></div>
+<h2>The exact forecast package</h2>
+<p>The frozen download contains the interactive charts, complete forecast tables, chamber distributions, sensitivity tables and the public methods report. Its predictions are chances of winning, not vote-share estimates.</p>
+<nav><a href="forecast-2026-11-02-snapshot.zip" download>Download frozen forecast ZIP</a><a href="forecast-2026-11-02-snapshot.zip.ots" download>Download timestamp receipt</a><a href="manifest.json">File manifest</a></nav>
+<p>SHA-256 fingerprint of the frozen ZIP:</p><div class="hash">1d99ca1dc4983d78b161cd6eadf90de22ae6119c345cc88aa1dffc578945e35e</div>
+<h2>Verify it yourself</h2>
+<ol><li>Download both the ZIP and its matching <code>.ots</code> receipt using the links above. Keep the ZIP unchanged.</li><li>Open <a href="https://opentimestamps.org/" rel="noopener noreferrer">OpenTimestamps</a>, select the receipt, then select the ZIP when prompted.</li><li>The verifier checks the file’s fingerprint and timestamp proof. If a receipt is still pending, it must acquire its Bitcoin confirmation before verification can finish.</li></ol>
+<p>For command-line verification, use the official <a href="https://github.com/opentimestamps/opentimestamps-client" rel="noopener noreferrer">OpenTimestamps client</a>. Full independent verification can use your own Bitcoin node.</p>
+<h2>What the dates mean</h2>
+<dl><dt>Forecast snapshot</dt><dd>November 2, 2026, 1:52:08 p.m. Eastern (18:52:08 UTC). This is the saved model cutoff, not an independently certified creation time.</dd><dt>Package prepared</dt><dd>2026-11-02T23:50:05.838441+00:00 (self-reported publication metadata).</dd><dt>Timestamp evidence</dt><dd>A confirmed proof establishes that these exact bytes existed by the attested Bitcoin block. A block timestamp is not a precise, certified wall-clock creation time. The proof does not establish authorship or forecast accuracy.</dd></dl>
+<p>Research stopped before the planned final research cutoff. This publication preserves that interim checkpoint. Timestamp confirmation and the verification page can be updated without changing the frozen forecast ZIP.</p>
+<footer class="muted">Last checked 2026-11-02T23:51:51.826756+00:00 · <a href="verification.json">Machine-readable verification record</a> · <a href="https://github.com/effervescent-stardust/2026-election-forecast">Public repository</a></footer>
+</main></body></html>
