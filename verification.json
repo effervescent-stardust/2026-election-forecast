@@ -1,10 +1,31 @@
 {
-  "status": "pending",
+  "status": "verified",
   "bundle": "forecast-2026-11-02-snapshot.zip",
   "bundle_sha256": "1d99ca1dc4983d78b161cd6eadf90de22ae6119c345cc88aa1dffc578945e35e",
   "proof_sha256": "fe9cdc380ac9447cadc357ed4fec8b056da8104e9da8fb20c6fc4b64e5d0ea01",
-  "checked_at_utc": "2026-11-02T23:51:51.826756+00:00",
+  "checked_at_utc": "2026-11-02T23:57:05.021912+00:00",
   "forecast_asof_utc": "2026-11-02T18:52:08.126598+00:00",
   "package_created_utc": "2026-11-02T23:50:05.838441+00:00",
-  "verification_method": "OpenTimestamps proof path verified against Bitcoin block headers from Blockstream and mempool.space; no local full-node verification."
+  "opentimestamps_verification_method": "When a completed proof is available, verify its path against Bitcoin block headers from Blockstream and mempool.space. No local full-node verification.",
+  "opentimestamps_status": "pending",
+  "rfc3161": {
+    "status": "verified",
+    "authority": "DigiCert",
+    "protocol": "RFC 3161",
+    "timestamp_utc": "2026-11-02T23:54:12+00:00",
+    "timestamp_eastern": "November 2, 2026, 6:54:12 p.m. EST",
+    "bundle": "forecast-2026-11-02-snapshot.zip",
+    "bundle_sha256": "1d99ca1dc4983d78b161cd6eadf90de22ae6119c345cc88aa1dffc578945e35e",
+    "receipt": "forecast.tsr",
+    "receipt_sha256": "6f14e68fd126923a83247649756cb6aca0b28bb039aba4423065014dc76e2d5d",
+    "official_cross_signed_g4_certificate": "https://knowledge.digicert.com/content/dam/kb/attachments/time-stamp/DigiCertTrustedRootG4.cer",
+    "root_certificate_source": "Local certifi CA trust store; public key matches the G4 cross-signed certificate linked by DigiCert.",
+    "root_certificate_sha256": "552f7bdcf1a7af9e6ce672017f4f12abf77240c78e761ac203d1d9d20ac89988",
+    "verification": "OpenSSL verified timestamp signature and chain using the trusted self-signed DigiCert Trusted Root G4. Verified both the ZIP digest and original nonce-bearing request. The root public key was cross-checked against DigiCert documentation.",
+    "verified_at_utc": "2026-11-02T23:56:12.121717+00:00",
+    "commands": [
+      "openssl ts -verify -data forecast-2026-11-02-snapshot.zip -in forecast.tsr -CAfile digicert-root.pem -untrusted timestamp-chain.pem",
+      "openssl ts -verify -queryfile forecast.tsq -in forecast.tsr -CAfile digicert-root.pem -untrusted timestamp-chain.pem"
+    ]
+  }
 }

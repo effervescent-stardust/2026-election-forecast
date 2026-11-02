@@ -1,0 +1,22 @@
+Download these four files into one folder:
+forecast-2026-11-02-snapshot.zip
+forecast.tsr
+digicert-root.pem
+timestamp-chain.pem
+
+Use an independently trusted DigiCert Trusted Root G4 root certificate.
+The bundled self-signed root comes from the certifi CA trust store.
+Its public key matches the G4 cross-signed certificate linked by DigiCert:
+https://knowledge.digicert.com/general-information/rfc3161-compliant-time-stamp-authority-server
+https://knowledge.digicert.com/content/dam/kb/attachments/time-stamp/DigiCertTrustedRootG4.cer
+Bundled root SHA-256 fingerprint: 552f7bdcf1a7af9e6ce672017f4f12abf77240c78e761ac203d1d9d20ac89988
+
+Run:
+openssl ts -verify -data forecast-2026-11-02-snapshot.zip -in forecast.tsr -CAfile digicert-root.pem -untrusted timestamp-chain.pem
+
+Expected result: Verification: OK
+
+To inspect the signed time:
+openssl ts -reply -in forecast.tsr -text
+
+The timestamp authenticates the file fingerprint and the authority's time assertion. It does not certify forecast accuracy or authorship.
